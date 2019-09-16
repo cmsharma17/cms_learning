@@ -15,12 +15,12 @@ public class ComparableExample {
 		System.out.println("Before sorting by Id---");
 		
 		for(Employee a: list)   // printing the sorted list of names
-	         System.out.println(a.getName() + ", "+a.getId());
+	         System.out.print(a.getName() + "- "+a.getId() +",");
 		
-		System.out.println("After sorting by Id---");
+		System.out.println("\nAfter sorting by Id---");
 		Collections.sort(list);
 		for(Employee a: list)   // printing the sorted list of names
-	         System.out.println(a.getName() + ", "+a.getId());
+	         System.out.print(a.getName() + "- "+a.getId()+",");
 	}
 }
 

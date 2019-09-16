@@ -1,6 +1,6 @@
 package com.cms.collectionFramework;
 
-public class ReverseLinkedList {
+public class ReverseLinkListUsingNode {
 	
 	private Node head;
 	
@@ -50,7 +50,7 @@ public class ReverseLinkedList {
 	}
 	
 	public static void main(String args[]){
-		ReverseLinkedList linkedList = new ReverseLinkedList();
+		ReverseLinkListUsingNode linkedList = new ReverseLinkListUsingNode();
 		Node head = new Node(5);
 		linkedList.addToList(head);
 		linkedList.addToList(new Node(6));
