@@ -10,7 +10,7 @@ public class abstractA {
 	}
 	
 	public static void main(String args[]){
-		abstractA A =  new abstractB();
+		abstractA A =  new abstractB();//This is called upcasting
 		A.doSomething();
 	}
 }
