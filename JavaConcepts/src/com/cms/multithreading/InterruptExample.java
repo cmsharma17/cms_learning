@@ -15,9 +15,6 @@ public class InterruptExample implements Runnable{
 		try {
 			Thread.sleep(Long.MAX_VALUE);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			//e.printStackTrace();
-			
 			System.out.println("["+Thread.currentThread().getName()+"] Interrupted by exception!");
 		}
 		
