@@ -4,6 +4,8 @@ Write a java program to sort an array elements using bubble sort algorithm.
 Input: 18 9 33 4 84 32
 
 Output: 4 9 18 32 33 84
+
+Complexity : (n-1) * (n-1) = o(n^2)
 */
 public class Bubblesort {
 
@@ -13,17 +15,13 @@ public class Bubblesort {
 		
 		System.out.println("Array Before Bubble Sort");  
         
-		for(int i=0; i < arr.length; i++){  
-                System.out.print(arr[i] + " ");  
-        }  
+		printArrayElement(arr);
         
 		System.out.println();  
 		bubbleSort(arr);
 		
 		System.out.println("Array After Bubble Sort");  
-        for(int i=0; i < arr.length; i++){  
-                System.out.print(arr[i] + " ");  
-        }  
+		printArrayElement(arr);
 
 	}
 	
@@ -39,7 +37,15 @@ public class Bubblesort {
 					arr[j]=tmp;
 				}
 			}
+			printArrayElement(arr);
 		}
+	}
+	
+	static void printArrayElement(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println("\n");
 	}
 
 }
