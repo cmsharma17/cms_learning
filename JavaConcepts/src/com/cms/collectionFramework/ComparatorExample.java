@@ -6,8 +6,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.*;
 
+//Additional Question - What if I write static public void instead of public static void ?
 public class ComparatorExample {
-	public static void main(String args[]){
+	static public void main(String args[]){
 		List<Student> al = new ArrayList<Student>();
 		al.add(new Student(1,"Chandra",20));
 		al.add(new Student(12,"Gautam",22));
