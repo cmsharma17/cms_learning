@@ -7,6 +7,7 @@ public class OverridingInJava {
 		b.testA();
 		AAA a = new BBB();
 		a.testA();
+		//a.testB();//It gives compile time errro
 	}
 
 }

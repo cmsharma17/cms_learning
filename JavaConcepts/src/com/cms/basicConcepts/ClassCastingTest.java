@@ -8,7 +8,7 @@ public class ClassCastingTest {
 		B y = new B();
 		C z = new C();
 		x=y;
-		//x =z;
+		x =z;
 		//y=z;
 		//z=x;
 		//z = (C)y;

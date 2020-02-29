@@ -23,6 +23,7 @@ class Apple{
 		this.color = color;
 	}
 	
+	@Override
 	public boolean equals(Object obj){
 		if(obj == null)
 			return false;
@@ -33,6 +34,7 @@ class Apple{
 		return this.color.equals(((Apple)obj).color);
 	}
 	
+	@Override
 	public int hashCode(){
 		return this.color.hashCode();	
 	}

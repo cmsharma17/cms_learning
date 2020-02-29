@@ -3,7 +3,8 @@ package com.cms.basicConcepts;
 public class OverloadingTest {
 	public static void main(String args[]){
 		A1 obj = new B1();
-		//obj.methodB1(); //It gives compile time errro
+		//obj.methodB1(); //It gives compile time error
+		obj.methodA1();
 	}
 }
 
