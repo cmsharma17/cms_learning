@@ -20,11 +20,11 @@ class Employee implements Runnable{
 		method1();
 	}
 	public synchronized void method1(){
-		System.out.println("method1--"+Thread.currentThread().getName());
+		System.out.println("synchronized method1--"+Thread.currentThread().getName());
 		method2();
 	}
 	
 	public void method2(){
-		System.out.println("method2--"+Thread.currentThread().getName());
+		System.out.println("Normal method2--"+Thread.currentThread().getName());
 	}
 }
