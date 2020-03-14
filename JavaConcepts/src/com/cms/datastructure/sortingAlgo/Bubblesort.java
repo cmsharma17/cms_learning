@@ -1,10 +1,12 @@
-package com.cms.datastructure;
+package com.cms.datastructure.sortingAlgo;
 /*
 Write a java program to sort an array elements using bubble sort algorithm.
 
 Input: 18 9 33 4 84 32
 
 Output: 4 9 18 32 33 84
+
+Complexity : (n-1) * (n-1) = o(n^2)
 */
 public class Bubblesort {
 
