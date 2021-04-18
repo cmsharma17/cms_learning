@@ -17,7 +17,7 @@ public class CopyTest {
 		
 		//mode changes in the original object
 		stud.setName("Dan");
-		stud.getSubj().setName("Physics");
+		stud.getSubj().setName("Chemistry");//Master stroke --verify
 
 		System.out.println("Original Object after it is updated: " 
 			+ stud.getName() + " - " + stud.getSubj().getName());
