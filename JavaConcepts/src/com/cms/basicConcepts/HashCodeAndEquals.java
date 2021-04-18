@@ -13,7 +13,7 @@ public class HashCodeAndEquals {
 		map.put(a2,20);
 		
 		System.out.println(map.get(new Apple("green")));
-	}
+}
 }
 
 class Apple{

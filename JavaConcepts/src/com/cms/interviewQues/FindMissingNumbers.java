@@ -33,6 +33,7 @@ public class FindMissingNumbers {
 		int missingCount = count - numbers.length;
 		BitSet bitSet = new BitSet(count);
 		for (int number : numbers) {
+			System.out.println("number:"+number);
 			bitSet.set(number - 1);
 		}
 		System.out.printf("Missing numbers in integer array %s, with total number %d is %n", 

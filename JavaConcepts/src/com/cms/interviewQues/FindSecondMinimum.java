@@ -10,7 +10,13 @@ public class FindSecondMinimum {
 
 	public static void main(String[] args) {
 		Integer[] inputArray = { 2, 19, 1, 89, 97, 4, 6, 8, 19, 24, 45 };
+		
+		//Method 1
+		Arrays.sort(inputArray);
+		System.out.println(inputArray[1]);
 		Arrays.asList(inputArray);
+		
+		//Method 2
 		// Convert input array to List
 		List<Integer> list = new ArrayList<Integer>(Arrays.asList(inputArray));
 

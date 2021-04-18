@@ -16,6 +16,12 @@ public class HashMapExample {
 			System.out.println(me.getKey());
 			System.out.println(me.getValue());
 		}
+		
+		//Java-8 way
+		hm.entrySet().forEach(map -> {
+			System.out.println(map.getKey());
+			System.out.println(map.getValue());
+		});
 
 	}
 

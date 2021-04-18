@@ -14,11 +14,11 @@ public class FindDuplicateCharacters {
 		char[] inputChars = str.toCharArray();
 		
 		Map<Character, Integer> hm = new HashMap<>();
-		for(char ch : inputChars) {
-			if(hm.get(ch) != null) {
-				hm.put(ch, hm.get(ch) + 1);
-			}else {
+		for(Character ch : inputChars) {
+			if(!hm.containsKey(ch)) {
 				hm.put(ch, 1);
+			}else {
+				hm.put(ch, hm.get(ch) + 1);
 			}
 		}
 		

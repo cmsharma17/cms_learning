@@ -33,6 +33,7 @@ public class FindCountOfPairsWithGivenSum {
 		int twice_count = 0;
 		for(int i=0; i<(arr.length ); i++) {
 			if(hm.get(sum - arr[i]) != null) {
+				System.out.println(hm.get(sum-arr[i]));
 				twice_count += hm.get(sum-arr[i]); 
 			}
 			if (sum - arr[i] == arr[i]) {
@@ -45,8 +46,7 @@ public class FindCountOfPairsWithGivenSum {
 	}
 
 	private void printArray(HashMap<Integer, Integer> hm) {
-		for(Map.Entry<Integer, Integer> val : hm.entrySet()) {
-			System.out.println("Key-->"+val.getKey()+", Value-->"+val.getValue());
-		}
+		hm.forEach((k,v) -> System.out.println("Key-"+k+",Value-"+v));
 	}
+	
 }

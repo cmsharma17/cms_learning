@@ -1,4 +1,4 @@
-package com.cms.datastructure;
+package com.cms.datastructure.sortingAlgo;
 
 public class InsertionSort {
 	public static void main(String[] args) {
